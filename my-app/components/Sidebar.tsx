@@ -93,9 +93,10 @@ Monitoring
         );
     })}
 
-    <p className="mt-6 mb-3 px-3 text-[10px] font-semibold text-gray-600 uppercase tracking-[0.2em] ">
+    <p className="mt-8 mb-3 px-3 text-[10px] font-semibold text-gray-600 uppercase tracking-[0.2em] ">
         System 
     </p>
+            
             
 </div>
 
