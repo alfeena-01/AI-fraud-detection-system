@@ -71,7 +71,7 @@ export default function Sidebar() {
 {/*navigation*/}
 
 <div className="flex-1 space-y-1 px-3 py-6">
-    <p>
+    <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
 
     </p>
 </div>
