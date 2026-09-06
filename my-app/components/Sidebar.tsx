@@ -114,7 +114,7 @@ Monitoring
 
         <div className="mt-2 flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-green-500"/>
-                <span>
+                <span className="text-sm text-gray-300">
                     AI monitoring active
 
                 </span>
