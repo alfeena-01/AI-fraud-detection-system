@@ -14,5 +14,9 @@ import {
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
+
+const navigation = [
+
+
 export default function Sidebar() {
     const pathname = usePathname();
