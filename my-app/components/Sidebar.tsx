@@ -25,8 +25,24 @@ const navigation = [
         name: "Transactions",
         href: "/transactions",
         icon: CreditCard,
-    }
-    }
+    },
+    {
+        name: "Alerts",
+        href: "/alerts",
+        icon: ShieldAlert,
+    },
+    {
+        name: "Analytics",
+        href: "/analytics",
+        icon: BarChart3,
+    },
+    {
+        name: "AI Insights",
+        href: "/ai-insights",
+        icon: BrainCircuit,
+    },
+    {
+];
 
 
 export default function Sidebar() {
