@@ -87,7 +87,7 @@ Monitoring
                 active ? "bg-white text-black" : "text-gray-400 hover:bg-white/5 hover:text-white"
             }`}
             >        
-            <Icon  />             
+            <Icon size={18}  />             
             <span className="">{item.name}</span>
             </Link>
         )
