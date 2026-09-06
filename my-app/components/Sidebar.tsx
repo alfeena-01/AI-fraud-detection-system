@@ -59,7 +59,7 @@ export default function Sidebar() {
 
 </div>
 <div>
-    <h1 className="text-lg font-bold text-white">FraudAI
+    <h1 className="text-lg font-bold tracking-tight">FraudAI
 
     </h1>
 </div>
