@@ -111,6 +111,11 @@ Monitoring
 <div className="p-4 border-t border-white/10">
     <div className="mb-3  rounded-xl p-3  hover:bg-white/5"    >
         <p className="text-xs text-gray-500">System Status</p>
+
+        <div className="mt-2 flex items-center gap-2">
+            
+
+        </div>
     </div>
 </div>
 
