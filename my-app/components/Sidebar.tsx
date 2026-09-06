@@ -90,8 +90,12 @@ Monitoring
             <Icon size={18}  />             
             <span >{item.name}</span>
             </Link>
-        )
+        );
     })}
+
+    <p className="mt-6 mb-3 px-3 text-[10px] font-semibold text-gray-600 uppercase tracking-[0.2em] ">
+        System 
+    </p>
             
 </div>
 
