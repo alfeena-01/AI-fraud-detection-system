@@ -76,6 +76,7 @@ Monitoring
     </p>
 
     {navigation.map((item) => {
+        const Icon = item.icon;
         const active = pathname === item.href;
     }
 </div>
