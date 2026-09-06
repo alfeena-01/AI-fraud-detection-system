@@ -21,6 +21,11 @@ const navigation = [
         href: "/dashboard",
         icon: LayoutDashboard,
     },
+    {
+        name: "Transactions",
+        href: "/transactions",
+        icon: CreditCard,
+    }
     }
 
 
