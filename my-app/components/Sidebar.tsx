@@ -55,6 +55,7 @@ export default function Sidebar() {
 
 <div className="flex items-center gap-3 px-6 h-20 border-b border-white/10">
 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-black">
+    <ShieldCheck size={23} />
 
 </div>
 
