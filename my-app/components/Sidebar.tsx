@@ -84,7 +84,7 @@ Monitoring
             key={item.name}
             href={item.href}
             className={`group flex items-center gap-3 rounded-xl px-3 py-3 text-sm transition ${
-                active ? "bg-white text-black" : "text-gray-400"
+                active ? "bg-white text-black" : "text-gray-400 hover:bg-white/5 hover:text-white"
             }`}
             >        
             <Icon className="h-6 w-6" aria-hidden="true" />             
