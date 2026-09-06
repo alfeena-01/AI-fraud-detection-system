@@ -70,7 +70,7 @@ export default function Sidebar() {
 
 {/*navigation*/}
 
-<div className="flex-1 px-4 py-6">
+<div className="flex-1 space-y-1 px-3 py-6">
     <p>
 
     </p>
