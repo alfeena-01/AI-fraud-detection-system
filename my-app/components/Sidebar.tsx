@@ -110,7 +110,7 @@ Monitoring
 {/*Bottom*/}
 <div className="p-4 border-t border-white/10">
     <div className="mb-3  rounded-xl p-3  hover:bg-white/5"    >
-        <p>System Status</p>
+        <p className="text-xs text-grey-500">System Status</p>
     </div>
 </div>
 
