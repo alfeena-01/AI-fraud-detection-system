@@ -50,7 +50,10 @@ export default function Sidebar() {
 
 
     return (
-        <aside className="w-64 bg-gray-800 text-white h-screen p-4">
+        <aside className="fixed left-0 top-0 z-50 flex flex-col w-64 border-r border-white/10 bg-[#0b0f15]   h-screen p-4">
+
+
+
             </aside>
 
 
