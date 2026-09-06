@@ -58,6 +58,11 @@ export default function Sidebar() {
     <ShieldCheck size={23} />
 
 </div>
+<div>
+    <h1>
+        
+    </h1>
+</div>
 
 </div>
 
