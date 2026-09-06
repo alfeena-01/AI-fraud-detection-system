@@ -63,7 +63,7 @@ export default function Sidebar() {
         Fraud <span className="text-white/50">AI</span>
 
     </h1>
-    <p className="text-[10px] uppercase">Security Intelligence </p>
+    <p className="text-[10px] uppercase tracking-[0.2em] text-gray-500">Security Intelligence </p>
 </div>
 
 </div>
