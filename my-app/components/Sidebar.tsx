@@ -120,7 +120,7 @@ Monitoring
                 </span>
         </div>
     </div>
-    <button>
+    <button className="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-sm text-gray-400 hover:bg-white/5 hover:text-white">
         <LogOut size={18} />
         Logout
     </button>
