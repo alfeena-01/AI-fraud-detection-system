@@ -48,5 +48,12 @@ const navigation = [
 export default function Sidebar() {
     const pathname = usePathname();
 
-    
+
+    return (
+        
+
+
+
+    )
+
 }
