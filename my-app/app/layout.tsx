@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "AI-powered fraud detection and transaction monitoring platform.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: Readonly<"/">) {
   return (
     <html
       lang="en"
