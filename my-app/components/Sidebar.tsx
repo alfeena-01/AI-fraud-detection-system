@@ -87,7 +87,7 @@ Monitoring
                 active ? "bg-white text-black" : "text-gray-400 hover:bg-white/5 hover:text-white"
             }`}
             >        
-            <Icon className="h-6 w-6" aria-hidden="true" />             
+            <Icon  />             
             <span className="">{item.name}</span>
             </Link>
         )
