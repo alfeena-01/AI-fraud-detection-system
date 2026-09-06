@@ -71,7 +71,7 @@ export default function Sidebar() {
 {/*navigation*/}
 
 <div className="flex-1 space-y-1 px-3 py-6">
-    <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+    <p className=" mb-3 px-3text-[10px] font-semibold text-gray-500 uppercase tracking-wider">
 Monitoring
     </p>
 </div>
