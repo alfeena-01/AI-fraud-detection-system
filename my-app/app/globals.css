@@ -5,7 +5,9 @@
   --foreground: #f5f7fa;
 }
 
-
+*{
+  box-sizing: border-box;
+}
 
 body {
   background: var(--background);
