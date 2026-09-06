@@ -83,7 +83,7 @@ Monitoring
             <Link
             key={item.name}
             href={item.href}
-            className={`group flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-semibold leading-6 text-white hover:bg-white/10 hover:text-white ${
+            className={`group flex items-center gap-3 rounded-xl px-3 py-3 text-sm  ${
                 active ? "bg-white/10 text-white" : "text-gray-400"
             }`}
             >        
