@@ -88,7 +88,7 @@ Monitoring
             }`}
             >        
             <Icon size={18}  />             
-            <span className="">{item.name}</span>
+            <span >{item.name}</span>
             </Link>
         )
     })}
