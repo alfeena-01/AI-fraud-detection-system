@@ -37,8 +37,8 @@ const navigation = [
         icon: BarChart3,
     },
     {
-        name: "AI Insights",
-        href: "/ai-insights",
+        name: "AI Model",
+        href: "/model",
         icon: BrainCircuit,
     },
     {
