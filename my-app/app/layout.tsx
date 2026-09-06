@@ -15,7 +15,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       lang="en"
       
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body >{children}</body>
     </html>
   );
 }
