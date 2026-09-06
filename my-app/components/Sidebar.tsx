@@ -72,7 +72,7 @@ export default function Sidebar() {
 
 <div className="flex-1 space-y-1 px-3 py-6">
     <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-
+Monitoring
     </p>
 </div>
 
