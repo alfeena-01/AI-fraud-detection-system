@@ -113,7 +113,13 @@ Monitoring
         <p className="text-xs text-gray-500">System Status</p>
 
         <div className="mt-2 flex items-center gap-2">
-            
+            <span className="h-2 w-2 rounded-full bg-green-500"/>
+                <span>
+                    AI monitoring active
+
+                </span>
+
+           
 
         </div>
     </div>
