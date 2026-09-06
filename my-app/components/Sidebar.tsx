@@ -54,7 +54,7 @@ export default function Sidebar() {
 {/*logo*/}
 
 <div className="flex items-center gap-3 px-6 h-20 border-b border-white/10">
-<div className="flex h-10 w-10">
+<div className="flex h-10 w-10 items-center">
 
 </div>
 
