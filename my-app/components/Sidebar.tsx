@@ -109,7 +109,7 @@ Monitoring
 
 {/*Bottom*/}
 <div className="p-4 border-t border-white/10">
-    <div>
+    <div className="mb-3  rounded-xl p-3  hover:bg-white/5"    >
         <p></p>
     </div>
 </div>
