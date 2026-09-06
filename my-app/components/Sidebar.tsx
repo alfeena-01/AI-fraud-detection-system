@@ -70,7 +70,7 @@ export default function Sidebar() {
 
 {/*navigation*/}
 
-<div className="flex-1 space-y-1 px-3 py-6">
+<nav className="flex-1 space-y-1 px-3 py-6">
     <p className=" mb-3 px-3 text-[10px] font-semibold text-gray-600 uppercase tracking-[0.2em]">
 Monitoring
     </p>
@@ -106,7 +106,7 @@ Monitoring
             <Settings size={18}  />             
             Settings
             </Link>
-</div>
+</nav>
 
 
             </aside>
