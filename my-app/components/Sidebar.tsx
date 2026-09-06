@@ -107,6 +107,12 @@ Monitoring
             </Link>
 </nav>
 
+{/*Bottom*/}
+<div className="p-4 border-t border-white/10">
+    <div>
+        <p></p>
+    </div>
+</div>
 
             </aside>
 
