@@ -118,11 +118,12 @@ Monitoring
                     AI monitoring active
 
                 </span>
-
-           
-
         </div>
     </div>
+    <button>
+        <LogOut size={18} />
+        Logout
+    </button>
 </div>
 
             </aside>
