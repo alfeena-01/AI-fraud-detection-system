@@ -97,7 +97,15 @@ Monitoring
         System 
     </p>
             
-            
+            <Link
+            href="/settings"
+            className={`group flex items-center gap-3 rounded-xl px-3 py-3 text-sm transition ${
+                pathname === "/settings" ? "bg-white text-black" : "text-gray-400 hover:bg-white/5 hover:text-white"
+            }`}
+            >        
+            <Settings size={18}  />             
+            Settings
+            </Link>
 </div>
 
 
