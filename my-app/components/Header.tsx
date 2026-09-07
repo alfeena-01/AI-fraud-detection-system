@@ -21,7 +21,7 @@ export default function Header() {
                     placeholder="Search..."
                     className=" w-40 bg-transparent text-sm text-white outline-none placeholder:text-gray-600"
                 />
-                <span className="text-xs text-gray-500">
+                <span className=" rounded bg-white/5 px-2 py-1 text-[10px] text-gray-500">
                     /
                 </span>
 
