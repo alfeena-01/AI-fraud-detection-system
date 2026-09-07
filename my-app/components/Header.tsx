@@ -16,7 +16,7 @@ export default function Header() {
             <div className="flex items-center gap-4">
 
                 <div className="hidden items-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 md:flex">
-                <Search size={16}/>
+                <Search size={16} className="text-gray-500"/>
 
                 </div>
             </div>
