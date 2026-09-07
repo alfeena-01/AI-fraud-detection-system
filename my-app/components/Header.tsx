@@ -33,6 +33,7 @@ export default function Header() {
                 </button>
                 <div className="flex items-center gap-3 border-1 border-white/10 pl-4 ">
                     <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-sm font-bold text-black">
+                        A
 
                     </div>
                 </div>
