@@ -18,9 +18,12 @@ export default function Header() {
                 <div className="hidden items-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 md:flex">
                 <Search size={16} className="text-gray-500"/>
                 <input
-                    placeholder="Search"
-                    className="bg-transparent text-sm outline-none placeholder:text-gray-500"
+                    placeholder="Search..."
+                    className=" w-40 bg-transparent text-sm text-white outline-none placeholder:text-gray-600"
                 />
+                <span>
+                    /
+                </span>
 
                 </div>
             </div>
