@@ -27,6 +27,8 @@ export default function Header() {
 
 
                 </div>
-                <button></button>
+                <button className=" relative rounded-xl bg-white/5 p-2 text-gray-500 transition hover:bg-white/10"    >
+
+                </button>
             </div>
         </header>
