@@ -29,6 +29,7 @@ export default function Header() {
                 </div>
                 <button className=" relative rounded-xl border border-white/10  p-3 text-gray-400 hover:bg-white/5 hover:text-white"    >
 <Bell size={18}/>
+<span className="absolute right-2 top-2 h-2 w-2 rounded-full bg-red-500"/>
                 </button>
             </div>
         </header>
