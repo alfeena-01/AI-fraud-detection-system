@@ -37,6 +37,7 @@ export default function Header() {
 
                     </div>
                     <div className="hidden md:block">
+                        <p className="text-sm font-medium ">Admin</p>
                     </div>
                 </div>
             </div>
