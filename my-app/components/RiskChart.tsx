@@ -7,4 +7,4 @@ import {
     YAxis,
     Tooltip,
     ResponsiveContainer,
-}
+} from "recharts";
