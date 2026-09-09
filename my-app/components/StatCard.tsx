@@ -28,7 +28,7 @@ export default function StatCard({title, value, change, description, icon: Icon,
                 <p className="mt-5 text-sm text-gray-500">
                     {title}
                 </p>
-                <h3 className="mt-1 text-2xl font-semibold">
+                <h3 className="mt-1 text-2xl font-semibold tracking-tight">
                     {value}
                 </h3>
 
