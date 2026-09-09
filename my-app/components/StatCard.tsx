@@ -25,7 +25,7 @@ export default function StatCard({title, value, change, description, icon: Icon,
 
                 </span>
                 </div>
-                <p className="mt-4 text-sm text-gray-500">
+                <p className="mt-5 text-sm text-gray-500">
                     {title}
                 </p>
 
