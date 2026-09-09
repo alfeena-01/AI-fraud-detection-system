@@ -37,5 +37,5 @@ export default function StatCard({title, value, change, description, icon: Icon,
 
 
         </div>
-    )
+    );
 }
