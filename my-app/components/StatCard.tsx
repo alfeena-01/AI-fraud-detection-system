@@ -31,6 +31,9 @@ export default function StatCard({title, value, change, description, icon: Icon,
                 <h3 className="mt-1 text-2xl font-semibold tracking-tight">
                     {value}
                 </h3>
+                <p>
+                    {description}
+                </p>
 
 
         </div>
