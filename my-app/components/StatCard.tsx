@@ -19,10 +19,15 @@ export default function StatCard({title, value, change, description, icon: Icon,
                 </div>
                 <span className={`rounded-full px-2 py-1 text-[11px] ${
                     danger ? "bg-red-500/10 text-red-400" : "bg-green-500/0 text-green-400"
-                }`}>
+                }`}
+                >
+                    {change}
 
                 </span>
                 </div>
+                <p>
+                    {title}
+                </p>
 
         </div>
     )
