@@ -26,6 +26,7 @@ export default function RiskChart() {
                 <AreaChart data={data}>
                     <defs>
                         <linearGradient id="transactionGradient" x1="0" y1="0"  x2="0" y2="1">
+                            <stop offset="0%" stopOpacity={0.25}/>
 
         </div>
 
