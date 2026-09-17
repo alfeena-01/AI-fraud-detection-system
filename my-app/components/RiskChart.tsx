@@ -43,6 +43,8 @@ export default function RiskChart() {
                     tick={{ fill: "#6b7280", fontSize: 12}}
                     />
                     <Tooltip contentStyle={{ backgroundColor: "#11161f", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "12px" ,color: "#fff"}} />
+                    <Area type="monotone" dataKey="transactions" stroke="#ffffff" strokeWidth={2} fill="url(#transactionGradient)" />
+                    <Area type="monotone" dataKey="fraud" stroke="#777" strokeWidth={2} fillOpacity={2} fill="transparent" />
 
         </div>
 
