@@ -31,5 +31,12 @@ export default function RiskChart() {
                         </linearGradient>
                         </defs>
 
+                    <XAxis dataKey="day"
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fill: "#6b7280", fontSize: 12}}
+                    
+                    />
+
         </div>
 
