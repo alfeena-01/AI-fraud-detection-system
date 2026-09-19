@@ -65,3 +65,10 @@ export default function TransactionTable() {
                <td className="px-4 py-4 text-sm text-gray-400">
                 {transaction.user}
               </td>
+              <td className="px-4 py-4 text-sm font-medium">
+                {transaction.amount}
+              </td>
+
+              <td className="px-4 py-4 text-sm text-gray-400">
+                {transaction.location}
+              </td>
