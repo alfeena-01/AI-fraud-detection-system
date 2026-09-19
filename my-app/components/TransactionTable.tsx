@@ -88,3 +88,13 @@ export default function TransactionTable() {
                   </span>
                 </div>
               </td>
+               <td className="px-4 py-4">
+                <span
+                  className={`rounded-full px-3 py-1 text-xs ${
+                    transaction.status === "Blocked"
+                      ? "bg-red-500/10 text-red-400"
+                      : transaction.status === "Review"
+                      ? "bg-yellow-500/10 text-yellow-400"
+                      : "bg-green-500/10 text-green-400"
+                  }`}
+                ></span>
