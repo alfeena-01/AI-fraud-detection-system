@@ -47,3 +47,9 @@ export default function TransactionTable() {
             <th className="px-4 py-4 font-medium">Status</th>
           </tr>
         </thead>
+          <tbody>
+          {transactions.map((transaction) => (
+            <tr
+              key={transaction.id}
+              className="border-b border-white/5 transition hover:bg-white/[0.02]"
+            ></tr>
