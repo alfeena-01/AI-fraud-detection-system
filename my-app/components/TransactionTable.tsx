@@ -52,4 +52,13 @@ export default function TransactionTable() {
             <tr
               key={transaction.id}
               className="border-b border-white/5 transition hover:bg-white/[0.02]"
-            ></tr>
+            >
+             <td className="px-4 py-4">
+                <p className="text-sm font-medium">
+                  {transaction.id}
+                </p>
+
+                <p className="mt-1 text-xs text-gray-600">
+                  Today
+                </p>
+              </td>
