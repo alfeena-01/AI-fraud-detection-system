@@ -103,3 +103,8 @@ export default function TransactionTable() {
               </td>
             </tr>
           ))}
+           </tbody>
+      </table>
+    </div>
+  );
+}
