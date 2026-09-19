@@ -62,3 +62,6 @@ export default function TransactionTable() {
                   Today
                 </p>
               </td>
+               <td className="px-4 py-4 text-sm text-gray-400">
+                {transaction.user}
+              </td>
