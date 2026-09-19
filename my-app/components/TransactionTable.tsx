@@ -7,4 +7,11 @@ const transactions = [
         risk: 94,
         status: "Blocked",
     },
-    
+    {
+    id: "TXN-92830",
+    user: "U-4491",
+    amount: "₹42,500",
+    location: "Russia",
+    risk: 87,
+    status: "Review",
+  },
