@@ -72,3 +72,19 @@ export default function TransactionTable() {
               <td className="px-4 py-4 text-sm text-gray-400">
                 {transaction.location}
               </td>
+               <td className="px-4 py-4">
+                <div className="flex items-center gap-3">
+                  <div className="h-1.5 w-16 overflow-hidden rounded-full bg-white/10">
+                    <div
+                      className="h-full rounded-full bg-white"
+                      style={{
+                        width: `${transaction.risk}%`,
+                      }}
+                    />
+                  </div>
+
+                  <span className="text-xs font-medium">
+                    {transaction.risk}%
+                  </span>
+                </div>
+              </td>
