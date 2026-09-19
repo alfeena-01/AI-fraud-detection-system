@@ -32,3 +32,18 @@ const transactions = [
     status: "Approved",
   },
 ];
+
+export default function TransactionTable() {
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full text-left">
+        <thead>
+          <tr className="border-b border-white/10 text-xs uppercase tracking-wider text-gray-600">
+            <th className="px-4 py-4 font-medium">Transaction</th>
+            <th className="px-4 py-4 font-medium">User</th>
+            <th className="px-4 py-4 font-medium">Amount</th>
+            <th className="px-4 py-4 font-medium">Location</th>
+            <th className="px-4 py-4 font-medium">Risk</th>
+            <th className="px-4 py-4 font-medium">Status</th>
+          </tr>
+        </thead>
