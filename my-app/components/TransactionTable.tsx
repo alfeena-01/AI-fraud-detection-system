@@ -98,3 +98,8 @@ export default function TransactionTable() {
                       : "bg-green-500/10 text-green-400"
                   }`}
                 >
+                    {transaction.status}
+                </span>
+              </td>
+            </tr>
+          ))}
