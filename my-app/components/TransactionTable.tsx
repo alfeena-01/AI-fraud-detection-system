@@ -97,4 +97,4 @@ export default function TransactionTable() {
                       ? "bg-yellow-500/10 text-yellow-400"
                       : "bg-green-500/10 text-green-400"
                   }`}
-                ></span>
+                >
