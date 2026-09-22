@@ -18,3 +18,7 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-[#080b10] text-white">
       
       <Sidebar />
+      <main className="ml-64 min-h-screen">
+        <Header />
+
+        <div className="p-8"></div>
