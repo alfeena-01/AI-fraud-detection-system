@@ -119,4 +119,12 @@ export default function DashboardPage() {
                     <p className="text-3xl font-bold">
                       10%
                     </p>
+                     <p className="text-xs text-gray-500">
+                      High Risk
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
 
