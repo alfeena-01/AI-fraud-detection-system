@@ -51,3 +51,11 @@ export default function DashboardPage() {
               description="Compared with last week"
               icon={Activity}
             />
+            <StatCard
+              title="Fraud Detected"
+              value="347"
+              change="+8.2%"
+              description="Suspicious transactions"
+              icon={ShieldAlert}
+              danger
+            />
