@@ -36,3 +36,8 @@ export default function DashboardPage() {
                 and investigate AI-generated fraud alerts.
               </p>
             </div>
+             <div className="hidden items-center gap-2 rounded-full border border-green-500/20 bg-green-500/5 px-4 py-2 text-xs text-green-400 md:flex">
+              <span className="h-2 w-2 rounded-full bg-green-400" />
+              AI Engine Online
+            </div>
+          </div>
