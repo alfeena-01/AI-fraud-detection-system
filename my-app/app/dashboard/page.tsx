@@ -184,5 +184,20 @@ export default function DashboardPage() {
                   Transactions requiring attention
                 </p>
               </div>
+              <button className="rounded-lg border border-white/10 px-4 py-2 text-xs text-gray-400 transition hover:bg-white/5 hover:text-white">
+                View all
+              </button>
+
+            </div>
+
+            <TransactionTable />
+
+          </div>
+
+        </div>
+      </main>
+    </div>
+  );
+}
 
 
