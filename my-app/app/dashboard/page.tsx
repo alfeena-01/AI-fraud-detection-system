@@ -21,4 +21,10 @@ export default function DashboardPage() {
       <main className="ml-64 min-h-screen">
         <Header />
 
-        <div className="p-8"></div>
+        <div className="p-8">
+            {/* Page heading */}
+          <div className="mb-8 flex items-end justify-between">
+            <div>
+              <p className="text-sm text-gray-500">
+                Wednesday, September 2, 2026
+              </p>
