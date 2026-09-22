@@ -76,3 +76,14 @@ export default function DashboardPage() {
               icon={AlertTriangle}
             />
           </div>
+
+           {/* Analytics */}
+          <div className="mt-6 grid gap-6 xl:grid-cols-[1fr_320px]">
+            
+            <div className="rounded-2xl border border-white/10 bg-[#0d1118] p-6">
+              
+              <div className="mb-6 flex items-center justify-between">
+                <div>
+                  <h2 className="font-semibold">
+                    Transaction Activity
+                  </h2>
