@@ -87,3 +87,8 @@ export default function DashboardPage() {
                   <h2 className="font-semibold">
                     Transaction Activity
                   </h2>
+                  <p className="mt-1 text-xs text-gray-600">
+                    Transactions vs detected fraud
+                  </p>
+                </div>
+
