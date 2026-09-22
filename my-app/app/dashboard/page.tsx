@@ -28,3 +28,6 @@ export default function DashboardPage() {
               <p className="text-sm text-gray-500">
                 Wednesday, September 2, 2026
               </p>
+              <h1 className="mt-2 text-3xl font-semibold tracking-tight">
+                Security Overview
+              </h1>
