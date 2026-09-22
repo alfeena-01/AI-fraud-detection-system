@@ -127,4 +127,19 @@ export default function DashboardPage() {
                 </div>
               </div>
 
+              <div className="mt-8 space-y-4">
+                
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
+                    <span className="text-sm text-gray-400">
+                      Low Risk
+                    </span>
+                  </div>
+
+                  <span className="text-sm font-medium">
+                    72%
+                  </span>
+                </div>
+
 
