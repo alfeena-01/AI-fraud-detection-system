@@ -170,5 +170,19 @@ export default function DashboardPage() {
               </div>
             </div>
           </div>
+           {/* Recent transactions */}
+          <div className="mt-6 rounded-2xl border border-white/10 bg-[#0d1118]">
+            
+            <div className="flex items-center justify-between border-b border-white/10 p-6">
+              
+              <div>
+                <h2 className="font-semibold">
+                  Recent Suspicious Transactions
+                </h2>
+
+                <p className="mt-1 text-xs text-gray-600">
+                  Transactions requiring attention
+                </p>
+              </div>
 
 
