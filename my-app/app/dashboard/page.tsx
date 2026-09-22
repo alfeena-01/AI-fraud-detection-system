@@ -91,4 +91,13 @@ export default function DashboardPage() {
                     Transactions vs detected fraud
                   </p>
                 </div>
+                 <select className="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs text-gray-400 outline-none">
+                  <option>Last 7 days</option>
+                  <option>Last 30 days</option>
+                  <option>Last 90 days</option>
+                </select>
+              </div>
+
+              <RiskChart />
+            </div>
 
