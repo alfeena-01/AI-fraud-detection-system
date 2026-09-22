@@ -41,3 +41,13 @@ export default function DashboardPage() {
               AI Engine Online
             </div>
           </div>
+          {/* Statistics */}
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            
+            <StatCard
+              title="Total Transactions"
+              value="24,582"
+              change="+12.4%"
+              description="Compared with last week"
+              icon={Activity}
+            />
