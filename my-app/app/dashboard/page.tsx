@@ -59,3 +59,20 @@ export default function DashboardPage() {
               icon={ShieldAlert}
               danger
             />
+            <StatCard
+              title="Amount at Risk"
+              value="₹28.4L"
+              change="+14.8%"
+              description="Potential financial exposure"
+              icon={CircleDollarSign}
+              danger
+            />
+
+            <StatCard
+              title="High Risk"
+              value="92"
+              change="-6.1%"
+              description="Requires investigation"
+              icon={AlertTriangle}
+            />
+          </div>
