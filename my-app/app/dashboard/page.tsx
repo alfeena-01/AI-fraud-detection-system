@@ -31,3 +31,8 @@ export default function DashboardPage() {
               <h1 className="mt-2 text-3xl font-semibold tracking-tight">
                 Security Overview
               </h1>
+               <p className="mt-2 max-w-xl text-sm text-gray-500">
+                Monitor transactions, detect suspicious activity,
+                and investigate AI-generated fraud alerts.
+              </p>
+            </div>
