@@ -101,3 +101,22 @@ export default function DashboardPage() {
               <RiskChart />
             </div>
 
+             {/* Risk distribution */}
+            <div className="rounded-2xl border border-white/10 bg-[#0d1118] p-6">
+              
+              <h2 className="font-semibold">
+                Risk Distribution
+              </h2>
+
+              <p className="mt-1 text-xs text-gray-600">
+                Current transaction risk levels
+              </p>
+
+              <div className="mt-10 flex items-center justify-center">
+                <div className="relative flex h-44 w-44 items-center justify-center rounded-full border-[18px] border-white/10">
+                  
+                  <div className="text-center">
+                    <p className="text-3xl font-bold">
+                      10%
+                    </p>
+
