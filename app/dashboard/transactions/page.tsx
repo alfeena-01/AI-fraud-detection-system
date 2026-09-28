@@ -292,12 +292,4 @@ function StatusBadge({
   }
 
   return (
-    <span
-      className={`text-xs font-medium ${
-        styles[status as keyof typeof styles]
-      }`}
-    >
-      ● {status}
-    </span>
-  )
-}
+  
