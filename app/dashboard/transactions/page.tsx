@@ -279,3 +279,25 @@ function RiskBadge({
     </div>
   )
 }
+
+function StatusBadge({
+  status,
+}: {
+  status: string
+}) {
+  const styles = {
+    Approved: "text-green-400",
+    Review: "text-yellow-400",
+    Blocked: "text-red-400",
+  }
+
+  return (
+    <span
+      className={`text-xs font-medium ${
+        styles[status as keyof typeof styles]
+      }`}
+    >
+      ● {status}
+    </span>
+  )
+}
