@@ -1,3 +1,4 @@
+```ts
 export type Transaction = {
   id: string
   userId: string
@@ -18,7 +19,7 @@ export const transactions: Transaction[] = [
   {
     id: "TXN-1001",
     userId: "USR-2041",
-    amount: 2499.0,
+    amount: 2499,
     merchant: "Amazon",
     category: "Shopping",
     paymentMethod: "Credit Card",
@@ -47,7 +48,9 @@ export const transactions: Transaction[] = [
     riskScore: 21,
     status: "Approved",
     riskLevel: "Low",
-    reason: ["Transaction matches normal user behavior"],
+    reason: [
+      "Transaction matches normal user behavior",
+    ],
   },
   {
     id: "TXN-1003",
@@ -81,7 +84,9 @@ export const transactions: Transaction[] = [
     riskScore: 14,
     status: "Approved",
     riskLevel: "Low",
-    reason: ["Normal recurring payment"],
+    reason: [
+      "Normal recurring payment",
+    ],
   },
   {
     id: "TXN-1005",
@@ -116,7 +121,9 @@ export const transactions: Transaction[] = [
     riskScore: 35,
     status: "Approved",
     riskLevel: "Medium",
-    reason: ["Slightly unusual spending pattern"],
+    reason: [
+      "Slightly unusual spending pattern",
+    ],
   },
   {
     id: "TXN-1007",
@@ -145,10 +152,5 @@ export const transactions: Transaction[] = [
     paymentMethod: "UPI",
     location: "Tirur, India",
     device: "Chrome / Android",
-    timestamp: "2026-09-22 15:42",
-    riskScore: 8,
-    status: "Approved",
-    riskLevel: "Low",
-    reason: ["Normal recurring payment"],
-  },
-]
+    timestamp: "2026
+```
