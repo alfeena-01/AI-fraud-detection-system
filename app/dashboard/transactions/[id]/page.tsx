@@ -211,24 +211,5 @@ export default function TransactionInvestigationPage() {
   )
 }
 
-function DetailItem({
-  icon,
-  label,
-  value,
-}: {
-  icon: ReactNode
-  label: string
-  value: string
-}) {
-  return (
-    <div className="flex items-start gap-3">
-      <div className="mt-0.5 text-gray-500">{icon}</div>
 
-      <div>
-        <p className="text-xs text-gray-500">{label}</p>
-        <p className="mt-1 text-sm text-gray-200">{value}</p>
-      </div>
-    </div>
-  )
-}
 
