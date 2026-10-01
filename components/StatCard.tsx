@@ -31,11 +31,4 @@ export default function StatCard({
         >
           {change}
         </span>
-      </div>
-
-      <p className="mt-5 text-sm text-gray-500">{title}</p>
-      <h3 className="mt-1 text-2xl font-semibold tracking-tight">{value}</h3>
-      <p className="mt-1 text-xs text-gray-600">{description}</p>
-    </div>
-  );
-}
+      
