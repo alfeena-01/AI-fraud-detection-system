@@ -1,4 +1,4 @@
-export default function ModelPage() {
+﻿export default function ModelPage() {
   return (
     <div className="space-y-4 p-6">
       <h1 className="text-2xl font-semibold text-white">Model</h1>
