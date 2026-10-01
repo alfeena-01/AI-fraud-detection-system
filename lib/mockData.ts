@@ -1,4 +1,4 @@
-```ts
+
 export type Transaction = {
   id: string
   userId: string
@@ -152,5 +152,13 @@ export const transactions: Transaction[] = [
     paymentMethod: "UPI",
     location: "Tirur, India",
     device: "Chrome / Android",
-    timestamp: "2026
-```
+    timestamp: "2026-09-22 15:14",
+    riskScore: 41,
+    status: "Review",
+    riskLevel: "Medium",
+    reason: [
+      "Recurring subscription payment",
+      "Slightly above average monthly spend",
+    ],
+  },
+]

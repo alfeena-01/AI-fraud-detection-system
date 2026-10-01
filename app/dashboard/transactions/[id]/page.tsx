@@ -3,6 +3,7 @@
 
 import Link from "next/link"
 import { useParams } from "next/navigation"
+import type { ReactNode } from "react"
 import {
   ArrowLeft,
   ShieldAlert,
@@ -20,16 +21,44 @@ import {
 import { transactions } from "@/lib/mockData"
 
 export default function TransactionInvestigationPage() {
-  const params = useParams()
+  const params = useParams<{ id: string }>()
+
+  const transactionId = params.id
 
   const transaction = transactions.find(
-    (item) => item.id === params.id
+    (item) => item.id === transactionId
   )
 
+  // If the transaction doesn't exist
   if (!transaction) {
     return (
-      <div className="p-10 text-center text-gray-400">
-        Transaction not found.
+      <div className="flex min-h-[60vh] items-center justify-center">
+        <div className="text-center">
+
+          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-red-500/10">
+            <AlertTriangle
+              size={26}
+              className="text-red-400"
+            />
+          </div>
+
+          <h1 className="text-xl font-semibold text-white">
+            Transaction Not Found
+          </h1>
+
+          <p className="mt-2 text-sm text-gray-500">
+            The transaction you are looking for does not exist.
+          </p>
+
+          <Link
+            href="/dashboard/transactions"
+            className="mt-5 inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-300 transition hover:border-orange-500/30 hover:bg-orange-500/10 hover:text-orange-400"
+          >
+            <ArrowLeft size={16} />
+            Back to Transactions
+          </Link>
+
+        </div>
       </div>
     )
   }
@@ -38,13 +67,13 @@ export default function TransactionInvestigationPage() {
     transaction.riskLevel === "High"
       ? "text-red-400"
       : transaction.riskLevel === "Medium"
-      ? "text-yellow-400"
-      : "text-green-400"
+        ? "text-yellow-400"
+        : "text-green-400"
 
   return (
     <div className="space-y-6">
 
-      {/* Back button */}
+      {/* Back Button */}
       <Link
         href="/dashboard/transactions"
         className="inline-flex items-center gap-2 text-sm text-gray-500 transition hover:text-white"
@@ -58,7 +87,7 @@ export default function TransactionInvestigationPage() {
 
         <div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
 
             <h1 className="text-2xl font-semibold text-white">
               {transaction.id}
@@ -78,10 +107,11 @@ export default function TransactionInvestigationPage() {
 
         </div>
 
-        {/* Action buttons */}
+        {/* Action Buttons */}
         <div className="flex gap-2">
 
           <button
+            type="button"
             className="inline-flex items-center gap-2 rounded-lg border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm text-green-400 transition hover:bg-green-500/20"
           >
             <CheckCircle2 size={16} />
@@ -89,6 +119,7 @@ export default function TransactionInvestigationPage() {
           </button>
 
           <button
+            type="button"
             className="inline-flex items-center gap-2 rounded-lg border border-red-500/20 bg-red-500/10 px-4 py-2 text-sm text-red-400 transition hover:bg-red-500/20"
           >
             <Ban size={16} />
@@ -99,7 +130,7 @@ export default function TransactionInvestigationPage() {
 
       </div>
 
-      {/* Risk Overview Cards */}
+      {/* Risk Overview */}
       <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
 
         {/* AI Risk Score */}
@@ -113,7 +144,9 @@ export default function TransactionInvestigationPage() {
                 AI Risk Score
               </p>
 
-              <p className={`mt-2 text-4xl font-bold ${riskColor}`}>
+              <p
+                className={`mt-2 text-4xl font-bold ${riskColor}`}
+              >
                 {transaction.riskScore}
               </p>
 
@@ -134,7 +167,7 @@ export default function TransactionInvestigationPage() {
 
         </div>
 
-        {/* Status */}
+        {/* Current Status */}
         <div className="rounded-xl border border-white/10 bg-[#0d1117] p-6">
 
           <p className="text-sm text-gray-500">
@@ -170,7 +203,7 @@ export default function TransactionInvestigationPage() {
 
       </div>
 
-      {/* Main Information */}
+      {/* Main Content */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
 
         {/* Transaction Details */}
@@ -188,7 +221,7 @@ export default function TransactionInvestigationPage() {
 
           </div>
 
-          <div className="grid grid-cols-1 gap-5 p-6 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 p-6 sm:grid-cols-2">
 
             <DetailItem
               icon={<User size={17} />}
@@ -256,20 +289,18 @@ export default function TransactionInvestigationPage() {
 
           <div className="space-y-3 p-6">
 
-            {transaction.reason.map((reason, index) => (
-
-              <div
-                key={index}
-                className="rounded-lg border border-red-500/10 bg-red-500/5 p-3"
-              >
-
-                <p className="text-sm leading-5 text-gray-300">
-                  {reason}
-                </p>
-
-              </div>
-
-            ))}
+            {transaction.reason.map(
+              (reason: string, index: number) => (
+                <div
+                  key={`${transaction.id}-reason-${index}`}
+                  className="rounded-lg border border-red-500/10 bg-red-500/5 p-3"
+                >
+                  <p className="text-sm leading-5 text-gray-300">
+                    {reason}
+                  </p>
+                </div>
+              )
+            )}
 
           </div>
 
@@ -298,16 +329,15 @@ export default function TransactionInvestigationPage() {
             </h2>
 
             <p className="mt-2 max-w-4xl text-sm leading-6 text-gray-400">
-
               The fraud detection engine assigned this transaction a{" "}
 
               <span className={riskColor}>
                 {transaction.riskScore}/100
               </span>
 
-              {" "}risk score based on transaction behavior, user activity,
-              device information, location and spending patterns.
-
+              {" "}risk score based on transaction behavior, user
+              activity, device information, location, and spending
+              patterns.
             </p>
 
           </div>
@@ -330,7 +360,7 @@ function DetailItem({
   label,
   value,
 }: {
-  icon: React.ReactNode
+  icon: ReactNode
   label: string
   value: string
 }) {
