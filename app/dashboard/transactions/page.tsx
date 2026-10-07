@@ -200,7 +200,10 @@ function StatusBadge({
     <span
       className={`text-xs font-medium ${
         styles[status as keyof typeof styles]
+<<<<<<< HEAD
       }`}
+=======
+>>>>>>> 6100d64 (feat: add fraud detection model)
     >
       ● {status}
     </span>
