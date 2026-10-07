@@ -81,7 +81,7 @@ export default function TransactionsPage() {
 
       <div className="overflow-hidden rounded-xl border border-white/10 bg-[#0d1117]">
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[1000px]">
+          <table className="w-full min-w-250">
             <thead>
               <tr className="border-b border-white/10 text-left text-xs uppercase tracking-wider text-gray-500">
                 <th className="px-6 py-4">Transaction</th>
@@ -98,7 +98,7 @@ export default function TransactionsPage() {
               {filteredTransactions.map((transaction) => (
                 <tr
                   key={transaction.id}
-                  className="border-b border-white/5 transition hover:bg-white/[0.02]"
+                  className="border-b border-white/5 transition hover:bg-white/2"
                 >
                   <td className="px-6 py-4">
                     <div>
@@ -202,4 +202,6 @@ function StatusBadge({
     </span>
   )
 }
+
+
 
